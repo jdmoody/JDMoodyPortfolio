@@ -10,4 +10,24 @@
  *
  *= require_self
  *= require_tree .
+ *= require font-awesome
+ *= require animate
  */
+
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600);
+a {
+  cursor: pointer;
+  -webkit-transition: color 0.5s linear 0s;
+  -moz-transition: color 0.5s linear 0s;
+  -o-transition: color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+p, div {
+    font-family: 'Open Sans', sans-serif;
+}
