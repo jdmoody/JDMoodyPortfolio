@@ -1,8 +1,8 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">JDMoody</a>
+      <a class="navbar-brand" href="http://www.jdmoody.com"><h3>JDMoody</h3></a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
@@ -29,19 +29,50 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <h1>Jonathan Moody</h1>
-    <h3>Web Developer For Hire</h3>
+    <h2>Web Developer For Hire</h2>
 
-    <div class="panel">
-      <h4>About</h4>
+    <div class="panel panel-default">
+      <h3>About</h3><br>
 
-      <p>Something Something</p>
+      <p>I graduated with B.S. in Physics from University of California, Santa Barbara and have always had a hungering curiosity for how things work.<br><br>
+
+During my senior year, my curiosity shifted from Physics to Computer Science in general and Web Development in particular. After taking some problem solving courses in C, C++, and Java, I moved on to <b>Ruby, Rails, Javascript, and Backbone.js, Node.js, HTML, and CSS</b>.<br><br>
+
+I often use the problem solving techniques I learned as a Physics major in my projects. I have a passion for gaming and enjoy incorporating it into my work.<br><br>
+
+I have an eye for aesthetics and like to create clean, intuitive apps. I try to write modular code that is understandable and refactorable. If you are interested, take a look at my projects to get a feel for my style!</p>
     </div>
-
-    <h4>Projects</h4>
-    <ul>
-      <li><%= link_to("MoZi", "http://www.jdmozi.com") %></li>
-      <li><%= link_to("Meowsteroids", "http://meowsteroids.herokuapp.com")%></li>
-      <li><%= link_to("HactiveRecord", "https://github.com/jdmoody/HactiveRecord")%></li>
-    </ul>
+    <div class="panel panel-default projects">
+      <h3>Projects</h3><br>
+        <h4>
+          MoZi | 
+          <%= link_to("live", "http://www.jdmozi.com") %> |
+          <%= link_to("github", "https://github.com/jdmoody/MoZi")%>
+        </h4>
+        <a href="http://www.jdmozi.com">
+          <%= image_tag("MoZi_Stream.png", size: '350x250')%>
+        </a>
+        <p>MoZi is a Twitch stream viewer that uses information from the Twitch API to show streams by game. Includes AJAX favoriting and following, Kaminari and jQuery infinite scroll, and injection-safe chat implemented with Pusher (independent from Twitch chat).</p>
+        <div class="line line-dashed"></div>
+        <h4>
+          Meowsteroids | 
+          <%= link_to("live", "http://meowsteroids.herokuapp.com") %> |
+          <%= link_to("github", "https://github.com/jdmoody/Meowsteroids")%>
+        </h4>
+        <a href="http://meowsteroids.herokuapp.com">
+          <%= image_tag("MeowMeow.png", size: '350x250')%>
+        </a>
+        <p>Meowsteroids is an old-school asteroids arcade game run in the browser using JS and HTML5 canvas. Uses vector algebra to calculate the ship and asteroids’ position, direction, and velocity.</p>
+        <div class="line line-dashed"></div>
+        <h4>
+          HactiveRecord | 
+          <%= link_to("github", "https://github.com/jdmoody/HactiveRecord") %>
+        </h4>
+        <a href="https://github.com/jdmoody/HactiveRecord">
+          <%= image_tag("HactiveRecord.png", size: '350x250')%>
+        </a>
+        <p>ActiveRecord ORM features created with Ruby metaprogramming including mass assignment, querying, persistence, and associations.</p>
+      </ul>
+    </div>
   </div>
 </div>

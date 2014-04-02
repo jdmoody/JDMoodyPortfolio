@@ -15,19 +15,94 @@
  */
 
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600);
-a {
-  cursor: pointer;
-  -webkit-transition: color 0.5s linear 0s;
-  -moz-transition: color 0.5s linear 0s;
-  -o-transition: color 0.5s linear 0s;
-  transition: color 0.5s linear 0s;
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+
+$dark-grey: #26292E;
+$med-grey: #7F8289;
+$link-blue: #4DC9F0;
+
+body {
+  background: $med-grey;
+  margin-top: 55px;
+  p {
+    font-size: 16px;
+  }
 }
+
+.navbar {
+  background: $dark-grey;
+  border: 0;
+  border-radius: 0;
+  .navbar-brand {
+    padding-top: 0px;
+    color: #FFFFFF;
+    -webkit-transition: color 0.25s linear 0s;
+    -moz-transition: color 0.25s linear 0s;
+    -o-transition: color 0.25s linear 0s;
+    transition: color 0.25s linear 0s;
+  }
+  .navbar-brand:hover {
+    color: $link-blue;
+  }
+  i {
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-transition: color 0.25s linear 0s;
+    -moz-transition: color 0.25s linear 0s;
+    -o-transition: color 0.25s linear 0s;
+    transition: color 0.25s linear 0s;
+  }
+  i:hover {
+    color: $link-blue;
+  }
+}
+
+.panel {
+  padding: 10px;
+}
+
+.projects {
+  text-align: center;
+  p {
+    text-align: left;
+    padding: 5px;
+  }
+}
+
+.line {
+  height: 2px;
+  margin: 10px;
+  overflow: hidden;
+  border-width: 0;
+  border-top: 1px solid $med-grey;
+}
+
+.line-dashed {
+  border-style: dashed;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
     text-align: center;
 }
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
 p, div {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
