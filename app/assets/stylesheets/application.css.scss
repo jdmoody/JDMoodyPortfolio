@@ -82,17 +82,17 @@ body {
   background-color: $dark-grey;
   border-color: $dark-grey;
   color: lightgrey;
-  
-  -webkit-transition: color 0.5s linear 0s;
-  -moz-transition: color 0.5s linear 0s;
-  -o-transition: color 0.5s linear 0s;
-  transition: color 0.5s linear 0s;
+  h2 { 
+    -webkit-transition: color 0.5s linear 0s;
+    -moz-transition: color 0.5s linear 0s;
+    -o-transition: color 0.5s linear 0s;
+    transition: color 0.5s linear 0s;
+  }
 }
 
 .about:hover {
-  color: $link-blue;
-  p {
-    color: lightgrey;
+  h2 {
+    color: $link-blue;
   }
 }
 
