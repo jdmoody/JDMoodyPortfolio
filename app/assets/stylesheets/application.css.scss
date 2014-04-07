@@ -23,7 +23,7 @@ $link-blue: #4DC9F0;
 
 body {
   background: $med-grey;
-  margin-top: 55px;
+  margin-top: 90px;
   p {
     font-size: 16px;
   }
@@ -31,7 +31,8 @@ body {
 
 .navbar {
   background: $dark-grey;
-  border: 0;
+  border-bottom-width: 2px;
+  border-color: $link-blue;
   border-radius: 0;
   .navbar-brand {
     padding-top: 0px;
@@ -61,11 +62,77 @@ body {
   padding: 10px;
 }
 
+.title {
+  background-color: $dark-grey;
+  border-color: $dark-grey;
+  color: #FFFFFF;
+  padding: 0px;
+  
+  -webkit-transition: color 0.5s linear 0s;
+  -moz-transition: color 0.5s linear 0s;
+  -o-transition: color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
+}
+
+.title:hover {
+  color: $link-blue;
+}
+
+.about {
+  background-color: $dark-grey;
+  border-color: $dark-grey;
+  color: lightgrey;
+  
+  -webkit-transition: color 0.5s linear 0s;
+  -moz-transition: color 0.5s linear 0s;
+  -o-transition: color 0.5s linear 0s;
+  transition: color 0.5s linear 0s;
+}
+
+.about:hover {
+  color: $link-blue;
+  p {
+    color: lightgrey;
+  }
+}
+
 .projects {
+  background-color: $dark-grey;
+  border-color: $dark-grey;
+  color: lightgrey;
   text-align: center;
+  
   p {
     text-align: left;
     padding: 5px;
+  }
+  
+  h2 {
+    -webkit-transition: color 0.5s linear 0s;
+    -moz-transition: color 0.5s linear 0s;
+    -o-transition: color 0.5s linear 0s;
+    transition: color 0.5s linear 0s;
+  }
+  
+  .project {
+    h3 {
+      -webkit-transition: color 0.5s linear 0s;
+      -moz-transition: color 0.5s linear 0s;
+      -o-transition: color 0.5s linear 0s;
+      transition: color 0.5s linear 0s;
+    }
+  }
+  
+  .project:hover {
+    h3 {
+      color: $link-blue;
+    }
+  }
+}
+
+.projects:hover {
+  h2 {
+    color: $link-blue;
   }
 }
 

@@ -28,11 +28,13 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <h1>Jonathan Moody</h1>
-    <h2>Web Developer For Hire</h2>
+    <div class="panel panel-default title">
+      <h1>Jonathan Moody</h1>
+      <h2>Web Developer For Hire</h2>
+    </div>
 
-    <div class="panel panel-default">
-      <h3>About</h3><br>
+    <div class="panel panel-default about">
+      <h2 class="about-title">About</h2><br>
 
       <p>I graduated with B.S. in Physics from University of California, Santa Barbara and have always had a hungering curiosity for how things work.<br><br>
 
@@ -43,35 +45,41 @@ I often use the problem solving techniques I learned as a Physics major in my pr
 I have an eye for aesthetics and like to create clean, intuitive apps. I try to write modular code that is understandable and refactorable. If you are interested, take a look at my projects to get a feel for my style!</p>
     </div>
     <div class="panel panel-default projects">
-      <h3>Projects</h3><br>
-        <h4>
-          MoZi | 
-          <%= link_to("live", "http://www.jdmozi.com") %> |
-          <%= link_to("github", "https://github.com/jdmoody/MoZi")%>
-        </h4>
-        <a href="http://www.jdmozi.com">
-          <%= image_tag("MoZi_Stream.png", size: '350x250')%>
-        </a>
-        <p>MoZi is a Twitch stream viewer that uses information from the Twitch API to show streams by game. Includes AJAX favoriting and following, Kaminari and jQuery infinite scroll, and injection-safe chat implemented with Pusher (independent from Twitch chat).</p>
+      <h2>Projects</h2><br>
+        <div class="project">
+          <h3>
+            MoZi | 
+            <%= link_to("live", "http://www.jdmozi.com") %> |
+            <%= link_to("github", "https://github.com/jdmoody/MoZi")%>
+          </h3>
+          <a href="http://www.jdmozi.com">
+            <%= image_tag("MoZi_Stream.png", size: '350x250')%>
+          </a>
+          <p>MoZi is a Twitch stream viewer that uses information from the Twitch API to show streams by game. Includes AJAX favoriting and following, Kaminari and jQuery infinite scroll, and injection-safe chat implemented with Pusher (independent from Twitch chat).</p>
+        </div>
         <div class="line line-dashed"></div>
-        <h4>
-          Meowsteroids | 
-          <%= link_to("live", "http://meowsteroids.herokuapp.com") %> |
-          <%= link_to("github", "https://github.com/jdmoody/Meowsteroids")%>
-        </h4>
-        <a href="http://meowsteroids.herokuapp.com">
-          <%= image_tag("MeowMeow.png", size: '350x250')%>
-        </a>
-        <p>Meowsteroids is an old-school asteroids arcade game run in the browser using JS and HTML5 canvas. Uses vector algebra to calculate the ship and asteroids’ position, direction, and velocity.</p>
+        <div class="project">
+          <h3>
+            Meowsteroids | 
+            <%= link_to("live", "http://meowsteroids.herokuapp.com") %> |
+            <%= link_to("github", "https://github.com/jdmoody/Meowsteroids")%>
+          </h3>
+          <a href="http://meowsteroids.herokuapp.com">
+            <%= image_tag("MeowMeow.png", size: '350x250')%>
+          </a>
+          <p>Meowsteroids is an old-school asteroids arcade game run in the browser using JS and HTML5 canvas. Uses vector algebra to calculate the ship and asteroids’ position, direction, and velocity.</p>
+        </div>
         <div class="line line-dashed"></div>
-        <h4>
-          HactiveRecord | 
-          <%= link_to("github", "https://github.com/jdmoody/HactiveRecord") %>
-        </h4>
-        <a href="https://github.com/jdmoody/HactiveRecord">
-          <%= image_tag("HactiveRecord.png", size: '350x250')%>
-        </a>
-        <p>ActiveRecord ORM features created with Ruby metaprogramming including mass assignment, querying, persistence, and associations.</p>
+        <div class="project">
+          <h3>
+            HactiveRecord | 
+            <%= link_to("github", "https://github.com/jdmoody/HactiveRecord") %>
+          </h3>
+          <a href="https://github.com/jdmoody/HactiveRecord">
+            <%= image_tag("HactiveRecord.png", size: '350x250')%>
+          </a>
+          <p>ActiveRecord ORM features created with Ruby metaprogramming including mass assignment, querying, persistence, and associations.</p>
+        </div>
       </ul>
     </div>
   </div>
