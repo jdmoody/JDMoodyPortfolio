@@ -22,7 +22,13 @@ $med-grey: #7F8289;
 $link-blue: #4DC9F0;
 
 body {
-  background: $med-grey;
+  #background img {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: 105%;
+    height: 105%;
+  }
   margin-top: 90px;
   p {
     font-size: 16px;
